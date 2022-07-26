@@ -1,37 +1,15 @@
 CONFIGURAR!
-    cli/     
-    crypto/          
-    integrationtests/                         
-    common/  
-    foreign-finder/  
-    intranet/                                         
-    trading/
-    helm-charts/          
-    ```
-    trading
-    git checkout dev
-    git pull origin dev
-    cli
 
-
-        Esse local pode mudar
-    export AVENUE_HOME=/home/lucas.lima@db1.com.br/go/src/github.com/avenuesec
-
-    git pull origin main
-
-    make build
-
-    cp avenue $HOME/.local/bin/
-
-    chmod u+x $HOME/.local/bin/avenue
-
-    export MYSQLPWD=root
-
-                            Mudar o nome
-    export AVENUE_TABLE_SUFFIX=lucasalves_avenuesec
-    export MYSQLSUFFIX=local
-    unset DATASTORE_EMULATOR_HOST
-
+    REPOSITORIOS
+        cli/     
+        crypto/          
+        integrationtests/                         
+        common/  
+        foreign-finder/  
+        intranet/                                         
+        trading/
+        helm-charts/          
+        
     gcloud auth login
     gcloud auth application-default login
 
