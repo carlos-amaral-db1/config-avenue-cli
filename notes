@@ -1,0 +1,71 @@
+CONFIGURAR!
+    cli/     
+    crypto/          
+    integrationtests/                         
+    common/  
+    foreign-finder/  
+    intranet/                                         
+    trading/
+    helm-charts/          
+    ```
+    trading
+    git checkout dev
+    git pull origin dev
+    cli
+
+
+        Esse local pode mudar
+    export AVENUE_HOME=/home/lucas.lima@db1.com.br/go/src/github.com/avenuesec
+
+    git pull origin main
+
+    make build
+
+    cp avenue $HOME/.local/bin/
+
+    chmod u+x $HOME/.local/bin/avenue
+
+    export MYSQLPWD=root
+
+                            Mudar o nome
+    export AVENUE_TABLE_SUFFIX=lucasalves_avenuesec
+    export MYSQLSUFFIX=local
+    unset DATASTORE_EMULATOR_HOST
+
+    gcloud auth login
+    gcloud auth application-default login
+
+    [Opcional] ./init opção 11
+    [Opcional] ./run_local.sh stop
+
+    avenue pull --develop
+    avenue build trading
+    avenue infra up
+    avenue migrate
+    avenue up trading --service migrator
+    avenue up trading
+
+    em outra aba
+    avenue doctor --platform integrationtests 
+    avenue up integrationtests (já ter executado o avenue up trading)
+
+    acessos
+    https://integration.avenuesec.io/env/local
+    http://localhost:8088
+    https://console.cloud.google.com/datastore/entities;kind=orchestrationwfstate_lucasalves_avenuesec;ns=__$DEFAULT$__/query/kind?referrer=search&authuser=0&project=trading-dev-201715&supportedpurview=project&pli=1&rapt=AEjHL4O1xeP2z40tkxVywKZI9emwiiJNpCUZowVpf3LD_9M612qYeqq1h7-F7Xhv3Bcr4MplpsOClIcFH1hSLwSIkRk_j_Zz9A
+
+RODAR!
+    avenue
+
+CASO NAO FUNCIONE
+    dentro do .bashrc
+    alias avenue = "caminho_do_cli/avenue"
+
+COMMANDS:
+    avenue pull --develop
+    avenue build trading
+    avenue infra up
+    avenue migrate
+    avenue up trading --service migrator
+    avenue up trading --service servico_desejado
+    avenue up trading
